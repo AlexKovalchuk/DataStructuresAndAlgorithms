@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructuresAndAlgorithms", "DataStructuresAndAlgorithms\DataStructuresAndAlgorithms.csproj", "{AF781B85-492C-4C96-8000-08EE2413326F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF781B85-492C-4C96-8000-08EE2413326F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF781B85-492C-4C96-8000-08EE2413326F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF781B85-492C-4C96-8000-08EE2413326F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF781B85-492C-4C96-8000-08EE2413326F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
