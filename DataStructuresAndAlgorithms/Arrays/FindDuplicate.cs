@@ -1,4 +1,4 @@
-namespace DSA.arrays;
+namespace DataStructuresAndAlgorithms.arrays;
 
 /*
  * Find the Duplicate Number in an Array

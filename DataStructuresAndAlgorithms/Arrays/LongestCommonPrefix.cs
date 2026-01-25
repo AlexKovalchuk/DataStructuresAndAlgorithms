@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace DSA.arrays;
+namespace DataStructuresAndAlgorithms.arrays;
 
 /*
  * Write a function to find the longest common prefix string amongst an array of strings.
