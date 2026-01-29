@@ -37,55 +37,49 @@ namespace DataStructuresAndAlgorithms.arrays;
 
 public class RemoveElement
 {
-    public static int RemoveElementBruteForce(int[] nums, int val)
+    private static int RemoveElementBruteForce(int[] nums, int val)
     {
         var k = nums.Length;
-        for (int i = 0; i < k; )
+        for (int i = 0; i < k;)
         {
             if (nums[i] != val)
             {
-                // just continue;
                 i++;
-            }
-            else if (nums[i] == val && nums[k-1] != val)
-            {
-                // move this value to the end.
-                nums[i] = nums[k - 1];
-                i++;
+                continue;
             }
             
-            k--;
+            if (nums[i] == val && nums[k-1] != val)
+            {
+                nums[i] = nums[k - 1];
+                i++;
+                k--;
+            }
+            else if (nums[i] == val && nums[k-1] == val)
+            {
+                k--;
+            }
         }
         return k;
     }
 
     public static void RunTests()
     {
+        Console.WriteLine("Test 1:");
         int[] test1 = [3, 2, 2, 3];
         int result1 = RemoveElementBruteForce(test1, 3);
         Console.WriteLine("result1 = " + result1);
         for (int i = 0; i < result1; i++)
         {
-            Console.Write(test1[i] + " ");
+            Console.WriteLine(test1[i] + " ");
         }
-    }
-
-    public static void BubbleSort(int[] nums, bool ascending = true)
-    {
-        for (int i = 0; i < nums.Length - 1; i++)
+        
+        Console.WriteLine("Test 2:");
+        int[] test2 = [0,1,2,2,3,0,4,2];
+        int result2 = RemoveElementBruteForce(test2, 2);
+        Console.WriteLine("result2 = " + result2);
+        for (int i = 0; i < result2; i++)
         {
-            for (int j = i + 1; j < nums.Length; j++)
-            {
-                if (ascending ? nums[i] > nums[j] : nums[j] > nums[i])
-                {
-                    (nums[i], nums[j]) = (nums[j], nums[i]);
-                }
-            }
-        }
-
-        for (int i = 0; i < nums.Length; i++)
-        {
-            // Console.WriteLine(nums[i]);
+            Console.WriteLine(test2[i] + " ");
         }
     }
 }

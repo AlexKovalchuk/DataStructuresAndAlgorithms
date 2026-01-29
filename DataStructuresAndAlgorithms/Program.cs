@@ -1,4 +1,5 @@
 ﻿using DataStructuresAndAlgorithms.arrays;
+using DataStructuresAndAlgorithms.Sorting;
 
 namespace DataStructuresAndAlgorithms;
 
@@ -12,7 +13,7 @@ class Program
         // TwoSums.RunTests();
         // LongestCommonPrefix.RunTests();
         // RemoveDuplicatesFromSortedArray.RunTests();
-        RemoveElement.RunTests();
-        RemoveElement.BubbleSort([5,1,4,2], true);
+        // RemoveElement.RunTests();
+        BubbleSort.RunTest();
     }
 }
