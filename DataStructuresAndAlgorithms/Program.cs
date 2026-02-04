@@ -1,4 +1,5 @@
-﻿using DSA.arrays;
+﻿using DataStructuresAndAlgorithms.arrays;
+using DataStructuresAndAlgorithms.Sorting;
 
 namespace DataStructuresAndAlgorithms;
 
@@ -11,6 +12,9 @@ class Program
         // FindDuplicate.RunTests();
         // TwoSums.RunTests();
         // LongestCommonPrefix.RunTests();
-        RemoveDuplicatesFromSortedArray.RunTests();
+        // RemoveDuplicatesFromSortedArray.RunTests();
+        // RemoveElement.RunTests();
+        // BubbleSort.RunTest();
+        MergeSort.RunTest();
     }
 }
