@@ -14,6 +14,7 @@ class Program
         // LongestCommonPrefix.RunTests();
         // RemoveDuplicatesFromSortedArray.RunTests();
         // RemoveElement.RunTests();
-        BubbleSort.RunTest();
+        // BubbleSort.RunTest();
+        MergeSort.RunTest();
     }
 }
