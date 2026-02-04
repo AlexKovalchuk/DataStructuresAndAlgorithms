@@ -4,7 +4,7 @@ namespace DataStructuresAndAlgorithms.Sorting;
 
 public class MergeSort
 {
-    public static int[] MergeToSubArrays(int[] arr1, int[] arr2)
+    public static int[] MergeTwoSubArrays(int[] arr1, int[] arr2)
     {
         int n1 = arr1.Length;
         int n2 = arr2.Length;
@@ -53,12 +53,12 @@ public class MergeSort
     {
         int[] arr1 = [3, 19];
         int[] arr2 = [2, 11];
-        int[] result = MergeToSubArrays(arr1, arr2);
+        int[] result = MergeTwoSubArrays(arr1, arr2);
         ArrayHelper.PrintArray(result, "Merge two sub arrays: [3, 19] && [2, 11]");
         
         int[] arr3 = [3, 19, 28];
         int[] arr4 = [2, 11, 13, 15];
-        int[] result2 = MergeToSubArrays(arr3, arr4);
+        int[] result2 = MergeTwoSubArrays(arr3, arr4);
         ArrayHelper.PrintArray(result2, "Merge two sub arrays: [3, 19, 28] && [2, 11, 13, 15]: ");
     }
 }
