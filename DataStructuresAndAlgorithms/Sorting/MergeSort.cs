@@ -25,25 +25,17 @@ public class MergeSort
             }
             k++;
         }
-        
-        if (i < n1)
+        while (i < n1)
         {
-            while (i < n1)
-            {
-                result[k] = arr1[i];
-                i++;
-                k++;
-            }
-            
+            result[k] = arr1[i];
+            i++;
+            k++;
         }
-        else if (j < n2)
+        while (j < n2)
         {
-            while (j < n2)
-            {
-                result[k] =  arr2[j];
-                j++;
-                k++;
-            }
+            result[k] =  arr2[j];
+            j++;
+            k++;
         }
         
         return result;

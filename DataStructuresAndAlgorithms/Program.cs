@@ -1,4 +1,5 @@
 ﻿using DataStructuresAndAlgorithms.arrays;
+using DataStructuresAndAlgorithms.Arrays;
 using DataStructuresAndAlgorithms.Sorting;
 
 namespace DataStructuresAndAlgorithms;
@@ -15,6 +16,7 @@ class Program
         // RemoveDuplicatesFromSortedArray.RunTests();
         // RemoveElement.RunTests();
         // BubbleSort.RunTest();
-        MergeSort.RunTest();
+        // MergeSort.RunTest();
+        SearchInsertPosition.RunTest();
     }
 }
