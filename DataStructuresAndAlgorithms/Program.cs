@@ -18,6 +18,7 @@ class Program
         // BubbleSort.RunTest();
         // MergeSort.RunTest();
         // SearchInsertPosition.RunTest();
-        PlusOne.RunTests();
+        // PlusOne.RunTests();
+        Search.RunTests();
     }
 }
