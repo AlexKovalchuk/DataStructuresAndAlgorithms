@@ -1,5 +1,6 @@
 ﻿using DataStructuresAndAlgorithms.arrays;
 using DataStructuresAndAlgorithms.Arrays;
+using DataStructuresAndAlgorithms.Helpers;
 using DataStructuresAndAlgorithms.Sorting;
 
 namespace DataStructuresAndAlgorithms;
@@ -19,6 +20,11 @@ class Program
         // MergeSort.RunTest();
         // SearchInsertPosition.RunTest();
         // PlusOne.RunTests();
-        Search.RunTests();
+        // Search.RunTests();
+        FindSmallestLetterGreaterThanTarget.RunTests();
+        
+        
+        // helpers:
+        // BinarySearch.RunTests();
     }
 }
