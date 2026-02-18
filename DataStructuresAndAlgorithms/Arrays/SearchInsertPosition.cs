@@ -99,13 +99,13 @@ public class SearchInsertPosition
         int[] nums5 = [1, 3, 5, 6];
         int target5 = 2;
         int expected5 = 1;
-        int result5 = SearchInsertBruteForce(nums5, target5);
+        int result5 = SearchInsertUsingBinarySearch(nums5, target5);
         Console.WriteLine($"Expected: {expected5}, actual result: {result5}");
         
         int[] nums6 = [1, 3, 5, 6];
         int target6 = 7;
         int expected6 = 4;
-        int result6 = SearchInsertBruteForce(nums6, target6);
+        int result6 = SearchInsertUsingBinarySearch(nums6, target6);
         Console.WriteLine($"Expected: {expected6}, actual result: {result6}");
     }
 }
