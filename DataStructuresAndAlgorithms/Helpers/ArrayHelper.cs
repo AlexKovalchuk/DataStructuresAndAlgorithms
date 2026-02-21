@@ -8,7 +8,8 @@ public static class ArrayHelper
         Console.WriteLine(title);
         for (int i = 0; i < length; i++)
         {
-            Console.WriteLine(array[i] + " ");
+            Console.Write($"{array[i]}{(i == length - 1 ? "." : ", ")}");
         }
+        Console.WriteLine();
     }
 }

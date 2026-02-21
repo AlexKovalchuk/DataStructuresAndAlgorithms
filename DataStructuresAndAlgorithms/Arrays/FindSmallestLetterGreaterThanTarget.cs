@@ -1,6 +1,6 @@
 namespace DataStructuresAndAlgorithms.Arrays;
 
-/*
+/* 744. Search Insert Position
  * You are given an array of characters letters that is sorted in non-decreasing order, and a character target.
    There are at least two different characters in letters.
    Return the smallest character in letters that is lexicographically greater than target.
