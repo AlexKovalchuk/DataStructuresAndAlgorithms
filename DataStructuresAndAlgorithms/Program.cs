@@ -21,8 +21,8 @@ class Program
         // SearchInsertPosition.RunTest();
         // PlusOne.RunTests();
         // Search.RunTests();
-        FindSmallestLetterGreaterThanTarget.RunTests();
-        
+        // FindSmallestLetterGreaterThanTarget.RunTests();
+        MergeSortedArray.RunTests();
         
         // helpers:
         // BinarySearch.RunTests();
