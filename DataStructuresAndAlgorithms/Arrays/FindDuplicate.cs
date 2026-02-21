@@ -36,15 +36,4 @@ public static class FindDuplicate
         }
         return false;
     }
-
-    public static void RunTests()
-    {
-        Console.WriteLine("============================");
-        Console.WriteLine("Find Duplicate in Array:");
-        int[] nums = {1, 2, 3, 4, 2};
-        bool hasDuplicateSimple = FindDuplicateSimple(nums);
-        Console.WriteLine($"Using Simple Method: {hasDuplicateSimple}");
-        bool hasDuplicateHashSet = FindDuplicateHashSet(nums);
-        Console.WriteLine($"Using HashSet Method: {hasDuplicateHashSet}");
-    }
 }

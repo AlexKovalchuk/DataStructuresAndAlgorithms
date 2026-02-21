@@ -95,37 +95,5 @@ public class MergeSortedArray
             k--;
         }
     }
-    public static void RunTests()
-    {
-        int[] nums1 = [1, 2, 3, 0, 0, 0];
-        int m = 3;
-        int[] nums2 = [2, 5, 6];
-        int n = 3;
-        Merge(nums1, m,nums2, n);
-        ArrayHelper.PrintArray(nums1, "Merge two sub arrays: [1, 2, 3, 0, 0, 0] && [2, 5, 6], Expected result: [1,2,2,3,5,6]");
-        
-        // Example 2
-        int[] nums1_2 = [1];
-        int m2 = 1;
-        int[] nums2_2 = [];
-        int n2 = 0;
-        Merge(nums1_2, m2, nums2_2, n2);
-        ArrayHelper.PrintArray(
-            nums1_2,
-            "Example 2: nums1=[1], m=1; nums2=[], n=0. Expected: [1]"
-        );
-
-        // Example 3
-        int[] nums1_3 = [0];
-        int m3 = 0;
-        int[] nums2_3 = [1];
-        int n3 = 1;
-
-        Merge(nums1_3, m3, nums2_3, n3);
-        ArrayHelper.PrintArray(
-            nums1_3,
-            "Example 3: nums1=[0], m=0; nums2=[1], n=1. Expected: [1]"
-        );
-    }
     
 }
