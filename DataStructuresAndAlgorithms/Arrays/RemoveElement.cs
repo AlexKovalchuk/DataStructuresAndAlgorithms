@@ -35,9 +35,9 @@ namespace DataStructuresAndAlgorithms.arrays;
    It does not matter what you leave beyond the returned k (hence they are underscores).
  */
 
-public class RemoveElement
+public static class RemoveElement
 {
-    private static int RemoveElementBruteForce(int[] nums, int val)
+    public static int RemoveElementBruteForce(int[] nums, int val)
     {
         var k = nums.Length;
         for (int i = 0; i < k;)
@@ -60,26 +60,5 @@ public class RemoveElement
             }
         }
         return k;
-    }
-
-    public static void RunTests()
-    {
-        Console.WriteLine("Test 1:");
-        int[] test1 = [3, 2, 2, 3];
-        int result1 = RemoveElementBruteForce(test1, 3);
-        Console.WriteLine("result1 = " + result1);
-        for (int i = 0; i < result1; i++)
-        {
-            Console.WriteLine(test1[i] + " ");
-        }
-        
-        Console.WriteLine("Test 2:");
-        int[] test2 = [0,1,2,2,3,0,4,2];
-        int result2 = RemoveElementBruteForce(test2, 2);
-        Console.WriteLine("result2 = " + result2);
-        for (int i = 0; i < result2; i++)
-        {
-            Console.WriteLine(test2[i] + " ");
-        }
     }
 }

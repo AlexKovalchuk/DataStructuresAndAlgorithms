@@ -31,35 +31,15 @@ public static class TwoSums
     public static int[] TwoSumOptimized(int[] nums, int target)
     {
         Dictionary<int, int> map = new Dictionary<int, int>();
-        for (int i = 0; i < nums.Length; i++)
+        for (var i = 0; i < nums.Length; i++)
         {
             if (map.ContainsKey(target - nums[i]))
             {
-                return  new []{ i, map[target - nums[i]]};
+                return [i, map[target - nums[i]]];
             }
             map.TryAdd(nums[i], i);
         }
         
         return [];
-    }
-
-    public static void RunTests()
-    {
-        Console.WriteLine("============================");
-        Console.WriteLine("Two Sum:");
-        int[] nums2 = [2, 2, 7, 11, 15];
-        int target = 17;
-        var twoSumSimple = TwoSumSimple(nums2, target);
-        Console.WriteLine($"Using Simple Method: target : {target}");
-        foreach (var tss in twoSumSimple)
-        {
-            Console.WriteLine($"tss: {tss}");
-        }
-        var twoSumOptimized = TwoSumOptimized(nums2, target);
-        Console.WriteLine($"Using Optimized Method: target : {target}");
-        foreach (var tso in twoSumOptimized)
-        {
-            Console.WriteLine($"tso: {tso}");
-        }
     }
 }
