@@ -26,7 +26,7 @@ namespace DataStructuresAndAlgorithms.Arrays;
    -104 <= target <= 104
  */
 
-public class SearchInsertPosition
+public static class SearchInsertPosition
 {
     public static int SearchInsertBruteForce(int[] nums, int target)
     {
@@ -65,47 +65,5 @@ public class SearchInsertPosition
         }
 
         return left;
-    }
-    
-    public static void RunTest()
-    {
-        Console.WriteLine("Use brute force search:");
-        int[] nums = [1, 3, 5, 6];
-        int target = 5;
-        int expected = 2;
-        int result = SearchInsertBruteForce(nums, target);
-        Console.WriteLine($"Expected: {expected}, actual result: {result}");
-        
-        int[] nums2 = [1, 3, 5, 6];
-        int target2 = 2;
-        int expected2 = 1;
-        int result2 = SearchInsertBruteForce(nums2, target2);
-        Console.WriteLine($"Expected: {expected2}, actual result: {result2}");
-        
-        int[] nums3 = [1, 3, 5, 6];
-        int target3 = 7;
-        int expected3 = 4;
-        int result3 = SearchInsertBruteForce(nums3, target3);
-        Console.WriteLine($"Expected: {expected3}, actual result: {result3}");
-        
-        Console.WriteLine("Use Binary search:");
-        
-        int[] nums4 = [1, 3, 5, 6];
-        int target4 = 5;
-        int expected4 = 2;
-        int result4 = SearchInsertUsingBinarySearch(nums4, target4);
-        Console.WriteLine($"Expected: {expected4}, actual result: {result4}");
-        
-        int[] nums5 = [1, 3, 5, 6];
-        int target5 = 2;
-        int expected5 = 1;
-        int result5 = SearchInsertUsingBinarySearch(nums5, target5);
-        Console.WriteLine($"Expected: {expected5}, actual result: {result5}");
-        
-        int[] nums6 = [1, 3, 5, 6];
-        int target6 = 7;
-        int expected6 = 4;
-        int result6 = SearchInsertUsingBinarySearch(nums6, target6);
-        Console.WriteLine($"Expected: {expected6}, actual result: {result6}");
     }
 }

@@ -27,7 +27,7 @@ namespace DataStructuresAndAlgorithms.Arrays;
    nums is sorted in ascending order.
  */
 
-public class Search
+public static class Search
 {
     public static int BinarySearch(int[] nums, int target)
     {
@@ -47,14 +47,5 @@ public class Search
         }
 
         return -1;
-    }
-
-    public static void RunTests()
-    {
-        int [] nums = new int[]{-1,0,3,5,9,12};
-        var result = BinarySearch(nums, 9);
-        Console.WriteLine($"Expected result: 4, Actual result: {result}");
-        var result2 = BinarySearch(nums, 2);
-        Console.WriteLine($"Expected result: -1, Actual result: {result2}");
     }
 }

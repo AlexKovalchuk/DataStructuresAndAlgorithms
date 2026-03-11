@@ -27,19 +27,4 @@ public static class RemoveDuplicatesFromSortedArray
 
         return k;
     }
-
-    public static void RunTests()
-    {
-        Console.WriteLine("============================");
-        Console.WriteLine("Remove Duplicates from Sorted Array:");
-        int[] nums = {0,0,1,1,1,2,2,3,3,4};
-        //           {0,1,1,1,1,2,2,3,3,4};
-        int uniqueCount = RemoveDuplicatesSimple(nums);
-        Console.WriteLine("Unique count is: {0}", uniqueCount);
-        for (int i = 0; i < uniqueCount; i++)
-        {
-            Console.WriteLine(nums[i]);
-
-        }
-    }
 }
