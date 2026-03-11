@@ -95,22 +95,4 @@ public static class LongestCommonPrefix
 		
         return longestPrefixSb.ToString();
 	}
-
-    public static void RunTests()
-    {
-        Console.WriteLine("===========================");
-        Console.WriteLine("Find Longest Common Prefix Simple: \"fly\", \"flower\", \"flow\", \"flight\", \"flertoux\", \"flez\", \"flyra\"");
-        string[] strs = ["fly", "flower", "flow", "flight", "flertoux", "flez", "flyra"];
-        var result = FindLongestCommonPrefixSimple(strs);
-        Console.WriteLine(result);
-        
-        Console.WriteLine("Find Longest Common Prefix Optimized: flower, flow, flight");
-        var result2 = FindLongestCommonPrefixOptimized(strs);
-        Console.WriteLine(result2);
-        
-        Console.WriteLine("Find Longest Common Prefix Senior Optimized:");
-        var result3 = FindLongestCommonPrefixSeniorOptimization(strs);
-        Console.WriteLine(result3);
-        
-    }
 }

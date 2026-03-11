@@ -100,20 +100,4 @@ public class PlusOne
         
         return digits;
     }
-
-    public static void RunTests()
-    {
-        int[] digits = [1, 2, 3];
-        var result = IncrementTheLargestIntegerByOne(digits);
-        ArrayHelper.PrintArray(result, "nums: ");
-        int[] digits2 = [4,3,2,1];
-        var result2 = IncrementTheLargestIntegerByOne(digits2);
-        ArrayHelper.PrintArray(result2, "nums 2: ");
-        int[] digits3 = [9,9,9,9];
-        var result3 = IncrementTheLargestIntegerByOne(digits3);
-        ArrayHelper.PrintArray(result3, "nums 3: ");
-        int[] digits4 = [8,9,9,9];
-        var result4 = IncrementTheLargestIntegerByOne(digits4);
-        ArrayHelper.PrintArray(result4, "nums 4: ");
-    } 
 }
