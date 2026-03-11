@@ -41,28 +41,4 @@ public static class FindSmallestLetterGreaterThanTarget
         
         return letters[left % letters.Length];
     }
-
-    public static void RunTests()
-    {
-        // Example 1:
-        char[] letters = ['c', 'f', 'j'];
-        char target = 'a';
-        char expected = 'c';
-        var result =  NextGreatestLetter(letters, target);
-        Console.WriteLine($"Example 1: target: {target}. expected: {expected}. result: {result}");
-        
-        // Example 2:
-        char[] letters2 = ['c', 'f', 'j'];
-        char target2 = 'c';
-        char expected2 = 'f';
-        var result2 =  NextGreatestLetter(letters2, target2);
-        Console.WriteLine($"Example 2: target: {target2}. expected: {expected2}. result: {result2}");
-        
-        // Example 3:
-        char[] letters3 = ['x', 'x', 'y', 'y'];
-        char target3 = 'z';
-        char expected3 = 'x';
-        var result3 =  NextGreatestLetter(letters3, target3);
-        Console.WriteLine($"Example 3: target: {target3}. expected: {expected3}. result: {result3}");
-    }
 }
