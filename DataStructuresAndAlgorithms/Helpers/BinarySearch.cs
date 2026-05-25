@@ -57,25 +57,4 @@ public class BinarySearch
 
         return left;
     }
-
-    public static void RunTests()
-    {
-        Console.WriteLine("Binary search:");
-        int[] nums = [1, 3, 5, 7];
-        
-        int targetBinary = 5;
-        int expectedResultBinary = 2;
-        int actualResultBinary = Search(nums, targetBinary);
-        Console.WriteLine($"Expected binary: {expectedResultBinary}, actual binary result: {actualResultBinary}");
-        
-        int[] numsBound = [1, 3, 4, 4, 4, 4, 5, 7];
-        int targetBound = 4;
-        int expectedResultLowerBound = 2;
-        int expectedResultUpperBound = 6;
-        int actualResultLowerBound = LowerBound(numsBound, targetBound);
-        int actualResultUpperBound = UpperBound(numsBound, targetBound);
-        Console.WriteLine($"Expected lower bound: {expectedResultLowerBound}, actual lower bound: {actualResultLowerBound}");
-        Console.WriteLine($"Expected upper bound: {expectedResultUpperBound}, actual upper bound: {actualResultUpperBound}");
-        
-    }
 }
